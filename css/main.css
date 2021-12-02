@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+@font-face {
+  font-family: 'formulaire';
+  src: url(../font/opensans-light-webfont.woff2) format("woff2"), url(../font/opensans-light-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'titrage';
+  src: url(../font/youngfrankexpandital-webfont.woff2) format("woff2"), url(../font/youngfrankexpandital-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'texte';
+  src: url(../font/rf_krabuler_regular-webfont.woff2) format("woff2"), url(../font/rf_krabuler_regular-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  width: 100vw;
+  display: block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: black;
+}
+
+#fond_halloween {
+  height: 510px;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+#fond_halloween img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+#conteneur {
+  margin-top: 59vh;
+  width: 100vw;
+  height: auto;
+  background-color: black;
+  padding-bottom: 10%;
+}
+
+#conteneur::before {
+  content: '';
+  display: block;
+  -webkit-box-shadow: inset 2px -25px 24px black;
+          box-shadow: inset 2px -25px 24px black;
+  -webkit-transform: translateY(-25px);
+          transform: translateY(-25px);
+  height: 130px;
+  width: 100vw;
+  background-image: url("../images/bois2.png");
+}
+
+h2 {
+  font-family: 'titrage';
+  text-align: center;
+}
+
+.titre_petit {
+  color: #CB3900;
+  font-weight: 400;
+  font-size: 1.83rem;
+}
+
+.titre_grand {
+  color: #e6b848;
+  font-weight: 400;
+  font-size: 2.5rem;
+}
+
+.titre_grand strong {
+  text-decoration: none;
+  color: #CB3900;
+  font-weight: 400;
+  font-size: 1.83rem;
+}
+
+p {
+  color: #F7F6F4;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-family: 'texte';
+  font-size: 1.2rem;
+}
+
+#texte1 {
+  padding: 0% 5% 0% 7%;
+  margin: 15% 0%;
+}
+
+#texte1 .halloween {
+  color: #e6b848;
+}
+
+#texte2 {
+  padding: 0% 5% 0% 7%;
+}
+
+.part1 {
+  -webkit-transform: translateY(-12%);
+          transform: translateY(-12%);
+}
+
+.part1 h2 {
+  font-size: 2.8rem;
+}
+
+#chapeau {
+  -webkit-transform: translateY(-60px);
+          transform: translateY(-60px);
+  font-size: 1.83rem;
+}
+
+#wrap_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#wrap_button button {
+  height: 50px;
+  width: 180px;
+  border: solid #FFD000 1px;
+  border-radius: 30px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff9d1), color-stop(50%, #f1dc8d), to(#c8951a));
+  background: linear-gradient(180deg, #fff9d1 0%, #f1dc8d 50%, #c8951a 100%);
+  -webkit-box-shadow: 0px 0px 15px #fff9d1;
+          box-shadow: 0px 0px 15px #fff9d1;
+}
+
+#wrap_button button a {
+  text-align: center;
+  text-decoration: none;
+  font-family: 'texte';
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  color: #191716;
+}
+
+li > h2 {
+  font-family: 'titrage';
+  color: #CB3900;
+  font-size: 1.83rem;
+  text-align: left;
+  font-weight: 400;
+  padding: 8% 5% 5% 10%;
+}
+
+.composee {
+  color: #F7F6F4;
+  font-size: 1.5rem;
+  font-family: 'texte';
+  padding-left: 20%;
+}
+
+h2.composee {
+  padding-left: 12%;
+}
+
+ul {
+  margin-top: 10%;
+}
+
+ul.composee {
+  list-style: none;
+  margin-top: -6%;
+}
+
+ul.composee li::before {
+  content: "\2022";
+  color: red;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.reduc1 {
+  padding: 8% 5% 0% 10%;
+}
+
+h2.reduc2 {
+  padding: 0% 5% 5% 10%;
+}
+
+.part3 {
+  margin-top: 10%;
+}
+
+label {
+  color: white;
+}
+
+select {
+  width: 50%;
+  display: block;
+}
+
+form {
+  padding: 0% 6%;
+}
+
+form input {
+  position: relative;
+  line-height: 2.5;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(98%, rgba(203, 57, 0, 0.25)), color-stop(98%, #cb3900));
+  background: linear-gradient(180deg, rgba(203, 57, 0, 0.25) 98%, #cb3900 98%);
+  border: none;
+}
+
+select {
+  -webkit-appearance: menulist-button;
+  height: 35px;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(98%, rgba(203, 57, 0, 0.25)), color-stop(98%, #cb3900));
+  background: linear-gradient(180deg, rgba(203, 57, 0, 0.25) 98%, #cb3900 98%);
+  border: none;
+}
+
+select {
+  color: #CB3900;
+  font-family: 'texte';
+  font-weight: 800;
+  font-size: 1.1rem;
+}
+
+label {
+  font-size: 1.1rem;
+  font-family: 'texte';
+  font-weight: 400;
+}
+
+.contient_label {
+  margin-top: 5%;
+}
+
+#label_txt {
+  margin: 0;
+  font-family: 'Open Sans';
+  font-size: 0.7rem;
+  margin-left: 2%;
+}
+
+.cb {
+  width: 4%;
+  margin: 0;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  position: relative;
+  top: 2%;
+}
+
+.p_txt {
+  font-family: 'Open Sans';
+  font-size: 0.65rem;
+}
+
+.ptxt {
+  width: 75%;
+  display: inline-block;
+}
+
+.checkboxes ul {
+  position: relative;
+}
+/*# sourceMappingURL=main.css.map */
